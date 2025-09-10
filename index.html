@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silvano's CSS & JavaScript Animation Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>✨ Silvano's CSS & JavaScript Animations ✨</h1>
+
+  <!-- Button that triggers animations -->
+  <button class="btn" onclick="toggleBox()">Click Me!</button>
+
+  <!-- Animated Box -->
+  <div class="box" id="animatedBox"></div>
+
+  <!-- Button for modal -->
+  <button class="btn" onclick="openModal()">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <h2>Hello from Silvano 🎉</h2>
+      <p>This modal was triggered by JavaScript.</p>
+      <button class="btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

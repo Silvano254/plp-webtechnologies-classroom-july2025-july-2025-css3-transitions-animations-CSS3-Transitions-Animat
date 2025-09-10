@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Part 1: CSS3 Transitions */
+.btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s, transform 0.3s;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* Animated box */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+  background: #764e9c;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes Example */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
